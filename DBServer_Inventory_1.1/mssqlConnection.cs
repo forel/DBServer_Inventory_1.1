@@ -18,6 +18,7 @@ namespace DBServer_Inventory_1._1
         bool trustedConnection;
         //comment git 1
         //comment git 2
+        //comment git 3
 
         SqlConnectionStringBuilder connectionString = new SqlConnectionStringBuilder();
         public SqlConnection sqlConnection = null;
