@@ -48,22 +48,8 @@ namespace DBServer_Inventory_1._1
         {
                                
             SqlCommand sqlCommand = new SqlCommand(form1_mssqlCommand.selectCommand_1, form1_mssqlConnection.sqlConnection);
-
             SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
-
-            List<string[]> dataList = new List<string[]>();
-
-            while (sqlDataReader.Read())
-            {
-                dataList.Add(new string[3]);
-
-                dataList[dataList.Count - 1][0] = sqlDataReader[0].ToString();
-                dataList[dataList.Count - 1][1] = sqlDataReader[1].ToString();
-                dataList[dataList.Count - 1][2] = sqlDataReader[2].ToString();
-            }
-
-            sqlDataReader.Close();
-
+            
             //очищаю ранее загруженные данные
             if (dataGridView1.RowCount > 0)
             {
@@ -71,10 +57,10 @@ namespace DBServer_Inventory_1._1
             }
 
             //заполняю форму
-            foreach (string[] s in dataList)
-            {
-                dataGridView1.Rows.Add(s);
-            }
+            BindingSource bindingSource = new BindingSource();
+            bindingSource.DataSource = sqlDataReader;
+
+            dataGridView1.DataSource = bindingSource;
 
             // Resize the DataGridView columns
             //dataGridView1.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.ColumnHeader);

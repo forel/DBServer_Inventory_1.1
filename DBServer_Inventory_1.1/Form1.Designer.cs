@@ -53,10 +53,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Server_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Server_address = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Application_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -110,11 +106,6 @@
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ID,
-            this.Server_name,
-            this.Server_address,
-            this.Application_name});
             this.dataGridView1.Location = new System.Drawing.Point(0, 52);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
@@ -281,30 +272,6 @@
             this.comboBox4.Size = new System.Drawing.Size(235, 21);
             this.comboBox4.TabIndex = 21;
             // 
-            // ID
-            // 
-            this.ID.HeaderText = "ID";
-            this.ID.Name = "ID";
-            this.ID.Visible = false;
-            // 
-            // Server_name
-            // 
-            this.Server_name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Server_name.HeaderText = "Server_name";
-            this.Server_name.Name = "Server_name";
-            // 
-            // Server_address
-            // 
-            this.Server_address.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Server_address.HeaderText = "Server_address";
-            this.Server_address.Name = "Server_address";
-            // 
-            // Application_name
-            // 
-            this.Application_name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Application_name.HeaderText = "Application_name";
-            this.Application_name.Name = "Application_name";
-            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(686, 382);
@@ -364,10 +331,6 @@
         private System.Windows.Forms.ToolStripButton toolStripButton2;
         private System.Windows.Forms.ToolStripButton toolStripButton3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Server_name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Server_address;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Application_name;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
